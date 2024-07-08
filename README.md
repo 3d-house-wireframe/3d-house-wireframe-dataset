@@ -59,5 +59,3 @@ The `read_npz.py` script performs the following tasks:
 ## Acknowledgments
 
 - Thanks to the Open3D and NumPy communities for providing the essential tools for this project.
-
-```
