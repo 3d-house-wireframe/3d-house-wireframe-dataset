@@ -4,6 +4,13 @@
 
 This project is dedicated to working with 3d house wireframe datasets stored in NPZ files. It includes a Python script for reading and visualizing 3D wireframe data using the Open3D library. The dataset and related scripts are organized to facilitate easy loading, processing, and visualization of 3D wireframes.
 
+## Dataset Download
+
+You can download the 3D house wireframe dataset from the following link:
+[Download Dataset](https://drive.google.com/drive/folders/1omp0mBoR8Z4jdHGM4V3699qO59fHfGhm?usp=sharing)
+
+Once downloaded, extract the zip file into the `npz` directory as shown in the directory structure below.
+
 ## Directory Structure
 
 ```
@@ -58,4 +65,7 @@ The `read_npz.py` script performs the following tasks:
 
 ## Acknowledgments
 
-- Thanks to the Open3D and NumPy communities for providing the essential tools for this project.
+- Thanks to the [Open3D](https://www.open3d.org/) and [NumPy](https://numpy.org/) communities for providing the essential tools for this project.
+- We appreciate the [RPLAN](https://rplan.org) for providing the fundamental floor plans of House.
+- Thank you to [Sepid Hosseini](https://github.com/sepidhosseini) for providing the code for extracting vertices and edges of the House floor plan.
+- We are grateful for the [scikit-geometry](https://scikit-geometry.github.io) Python library for providing the tools to extract roof straight skeletons.
