@@ -66,6 +66,6 @@ The `read_npz.py` script performs the following tasks:
 ## Acknowledgments
 
 - Thanks to the [Open3D](https://www.open3d.org/) and [NumPy](https://numpy.org/) communities for providing the essential tools for this project.
-- We appreciate the [RPLAN](https://rplan.org) for providing the fundamental floor plans of House.
-- Thank you to [Sepid Hosseini](https://github.com/sepidhosseini) for providing the code for extracting vertices and edges of the House floor plan.
-- We are grateful for the [scikit-geometry](https://scikit-geometry.github.io) Python library for providing the tools to extract roof straight skeletons.
+- We appreciate the [RPLAN](http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html) for providing the fundamental floor plans of House.
+- Thank you to [Sepid Hosseini](https://github.com/sepidsh) for providing the code for extracting vertices and edges of the House floor plan.
+- We are grateful for the [scikit-geometry](https://github.com/scikit-geometry/scikit-geometry) Python library for providing the tools to extract roof straight skeletons.
