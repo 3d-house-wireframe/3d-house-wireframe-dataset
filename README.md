@@ -4,6 +4,8 @@
 
 This project is dedicated to working with 3d house wireframe datasets stored in NPZ files. It includes a Python script for reading and visualizing 3D wireframe data using the Open3D library. The dataset and related scripts are organized to facilitate easy loading, processing, and visualization of 3D wireframes.
 
+For more details, please visit our project homepage: [https://vcc.tech/research/2024/3DWire](https://vcc.tech/research/2024/3DWire).
+
 ## Dataset Download
 
 You can download the 3D house wireframe dataset from the following link:
@@ -69,3 +71,14 @@ The `read_npz.py` script performs the following tasks:
 - We appreciate the [RPLAN](http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html) for providing the fundamental floor plans of House.
 - Thank you to [Sepid Hosseini](https://github.com/sepidsh) for providing the code for extracting vertices and edges of the House floor plan.
 - We are grateful for the [scikit-geometry](https://github.com/scikit-geometry/scikit-geometry) Python library for providing the tools to extract roof straight skeletons.
+
+## Citation
+If you find our work useful in your research, please consider citing:
+
+	@article{3DWire24,
+	  title={Generating 3D House Wireframes with Semantics}, 
+	  author={Xueqi Ma and Yilin Liu and Wenjun Zhou and Ruowei Wang and Hui Huang},
+	  booktitle={ECCV},
+	  pages={},
+	  year={2024}
+	}
