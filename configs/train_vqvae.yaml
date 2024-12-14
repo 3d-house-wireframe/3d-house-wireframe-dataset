@@ -1,0 +1,37 @@
+resume_training: false
+
+epochs: 80
+batch_size: 80
+lr: 0.0001
+num_workers: 8
+num_gpus: 4
+save_every_epoch: 1
+
+use_wandb_tracking: true
+wandb_project_name: segment_vqvae
+wandb_run_name: vqvae
+
+
+DATA:
+    train_set_file_path: /studio/datasets/3dwire_dataset.pkl
+    replication: 1
+
+MODEL:
+
+    codebook_size: 8192
+    dim_codebook: 192
+    attn_encoder_depth: 4
+    attn_decoder_depth: 8 # for abc dataset, 8 is better
+    local_attn_window_size: 64
+    encoder_dims_through_depth: [
+      64, 128, 256, 256, 384
+    ]
+    decoder_dims_through_depth: [
+      128, 128, 128, 128, 
+      192, 192, 192, 192,
+      256, 256, 256, 256, 256, 256,
+      384, 384, 384
+    ]
+
+    checkpoint_folder: checkpoints/checkpoints_vqvae
+    checkpoint_file_name: model-01.pt

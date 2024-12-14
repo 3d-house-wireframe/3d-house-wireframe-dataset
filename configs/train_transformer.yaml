@@ -1,0 +1,52 @@
+resume_training: false
+from_start: false
+
+epochs: 160
+batch_size: 64
+lr: 0.0001
+num_workers: 32
+num_gpus: 4
+
+val_every_epoch: 1
+save_every_epoch: 2
+log_every_step: 10
+
+use_wandb_tracking: true
+wandb_project_name: wireframe_transformer
+wandb_run_name: transformer
+
+
+DATA:
+    dataset_file_path: /studio/datasets/3dwire_dataset.pkl
+    replication: 1
+
+MODEL:
+    # for autoencoder
+    attn_depth: 12
+
+    codebook_size: 8192
+    dim_codebook: 192
+    attn_encoder_depth: 4
+    attn_decoder_depth: 8 # for abc dataset, 8 is better
+    local_attn_window_size: 64
+    encoder_dims_through_depth: [
+      64, 128, 256, 256, 384
+    ]
+    decoder_dims_through_depth: [
+      128, 128, 128, 128, 
+      192, 192, 192, 192,
+      256, 256, 256, 256, 256, 256,
+      384, 384, 384
+    ]
+
+    vqvae_ckpt_path: checkpoints/checkpoints_vqvae/model-01.pt
+
+    # for transformer
+    dim: 512
+    attn_heads: 16
+    max_seq_len: 520
+    coarse_pre_gateloop_depth: 2
+    fine_pre_gateloop_depth: 2
+    
+    checkpoint_folder: checkpoints/checkpoints_transformer
+    checkpoint_file_name: model-01.pt
