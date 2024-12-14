@@ -71,6 +71,8 @@ The `read_npz.py` script performs the following tasks:
 - We appreciate the [RPLAN](http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html) for providing the fundamental floor plans of House.
 - Thank you to [Sepid Hosseini](https://github.com/sepidsh) for providing the code for extracting vertices and edges of the House floor plan.
 - We are grateful for the [scikit-geometry](https://github.com/scikit-geometry/scikit-geometry) Python library for providing the tools to extract roof straight skeletons.
+- We appreciate [vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch) for offering essential tools that played a key role in our network model development.
+- We thank [x-transformers](https://github.com/lucidrains/x-transformers) for providing a flexible and powerful transformer implementation that supported our project.
 
 ## Citation
 If you find our work useful in your research, please consider citing:
@@ -79,6 +81,6 @@ If you find our work useful in your research, please consider citing:
 	  title={Generating 3D House Wireframes with Semantics}, 
 	  author={Xueqi Ma and Yilin Liu and Wenjun Zhou and Ruowei Wang and Hui Huang},
 	  booktitle={ECCV},
-	  pages={},
+	  pages={223-240},
 	  year={2024}
 	}
